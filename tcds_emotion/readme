@@ -1,0 +1,16 @@
+deap和seed分别是数据文件夹，其中seed里面的other是部分无法加载，重新整理后的数据，
+preprocessed_EEG是seed可以用python完整加载的数据。
+seed里面的other文件夹和preprocessed_EEG文件加起来即为seed完整数据。
+
+
+文件夹code_seed是seed数据集的主要代码文件，里面包括：
+    get_diagrams，process_other，fromdiagrams三个python文件。
+    其中，get_diagrams和process_other是提取并保持seed数据集的代码
+        fromdiagrams是从保持的diagrams加载diagrams数组并提取特征进行分类
+
+主文件下的python文件：
+    deap和deap_23_classify分别是deap数据的4分类和2、3分类。
+
+
+seed提取的diagrams数组保存在diagrams文件夹中。
+deap提取的diagrams数组保存在deap_diagrams文件夹中。
